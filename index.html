@@ -2225,6 +2225,104 @@ footer .official-logo,
   }
 }
 
+
+
+/* Propiedades destacadas restauradas */
+.featured-properties-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:22px;
+  margin-top:34px;
+}
+.featured-property-card{
+  overflow:hidden;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 14px 34px rgba(8,31,74,.10);
+  border:1px solid rgba(8,31,74,.08);
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.featured-property-photo{
+  position:relative;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#eef2f6;
+}
+.featured-property-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.featured-property-badge{
+  position:absolute;
+  top:14px;
+  left:14px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#FE5D26;
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+}
+.featured-property-body{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex:1;
+}
+.featured-property-kind{
+  color:#0B9A90;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.featured-property-card h3{
+  margin:0;
+  color:#081F4A;
+  font-size:19px;
+  line-height:1.14;
+}
+.featured-property-location{
+  margin:0;
+  color:#6f7f93;
+  font-size:13px;
+  line-height:1.45;
+}
+.featured-property-meta{
+  color:#6f7f93;
+  font-size:12px;
+  margin-top:auto;
+}
+.featured-property-price{
+  color:#081F4A;
+  font-size:17px;
+}
+.featured-property-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:0 14px;
+  border-radius:10px;
+  background:#081F4A;
+  color:#fff !important;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+}
+.featured-property-link:hover{background:#FE5D26}
+@media(max-width:1050px){
+  .featured-properties-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .featured-properties-grid{grid-template-columns:1fr;gap:16px}
+}
+
 </style><style>
         /* Standalone-file safeguard */
         body{min-width:0}
@@ -2277,7 +2375,7 @@ footer .official-logo,
 <p data-i18n-en="A selection of properties currently available for rent. Contact our team for up-to-date availability and terms." data-i18n-es="Una selección de propiedades actualmente en arriendo. Para disponibilidad y condiciones actualizadas, consulta con nuestro equipo.">Una selección de propiedades actualmente en arriendo. Para disponibilidad y condiciones actualizadas, consulta con nuestro equipo.</p>
 </div>
 </div>
-</section>
+<div class="featured-properties-grid"><article class="featured-property-card"><div class="featured-property-photo"><img alt="Bodega en arriendo en Ciudad Empresarial 311m2 Huechuraba" src="ea85fcf9611f7e4f87d4978a42386300.jpg"/><span class="featured-property-badge" data-i18n-en="For rent" data-i18n-es="Arriendo">Arriendo</span></div><div class="featured-property-body"><div class="featured-property-kind" data-i18n-en="Warehouse · Huechuraba" data-i18n-es="Bodega · Huechuraba">Bodega · Huechuraba</div><h3 data-i18n-en="311 m² Warehouse for Rent – Ciudad Empresarial, Huechuraba" data-i18n-es="Bodega en arriendo en Ciudad Empresarial 311m2 Huechuraba">Bodega en arriendo en Ciudad Empresarial 311m2 Huechuraba</h3><p class="featured-property-location" data-i18n-en="Parque Ciudad Empresarial. Huechuraba · Ciudad Empresarial · Huechuraba" data-i18n-es="Parque Ciudad Empresarial. Huechuraba · Ciudad Empresarial · Huechuraba">Parque Ciudad Empresarial. Huechuraba · Ciudad Empresarial · Huechuraba</p><div class="featured-property-meta"><span>315.00 m²</span></div><strong class="featured-property-price">UF 96,41</strong><a class="featured-property-link" data-i18n-en="View property" data-i18n-es="Ver propiedad" href="propiedades.html?prop=KP484396">Ver propiedad</a></div></article><article class="featured-property-card"><div class="featured-property-photo"><img alt="OFICINA HABILITADA ARRIENDO LOS TRAPENSES LO BARNECHEA" src="460c0f33a7fdbf3665799ee1a7ca308a.jpg"/><span class="featured-property-badge" data-i18n-en="For rent" data-i18n-es="Arriendo">Arriendo</span></div><div class="featured-property-body"><div class="featured-property-kind" data-i18n-en="Office · Lo Barnechea" data-i18n-es="Oficina · Lo Barnechea">Oficina · Lo Barnechea</div><h3 data-i18n-en="Fitted Office for Rent – Los Trapenses, Lo Barnechea" data-i18n-es="OFICINA HABILITADA ARRIENDO LOS TRAPENSES LO BARNECHEA">OFICINA HABILITADA ARRIENDO LOS TRAPENSES LO BARNECHEA</h3><p class="featured-property-location" data-i18n-en="Camino Los Trapenses · Los Trapenses · Lo Barnechea" data-i18n-es="Camino los Trapenses · Los Trapenses · Lo Barnechea">Camino los Trapenses · Los Trapenses · Lo Barnechea</p><div class="featured-property-meta"><span>11.90 m²</span></div><strong class="featured-property-price">UF 8,50</strong><a class="featured-property-link" data-i18n-en="View property" data-i18n-es="Ver propiedad" href="propiedades.html?prop=KP485474">Ver propiedad</a></div></article><article class="featured-property-card"><div class="featured-property-photo"><img alt="Arriendo local comercial Vitacura 217m2 Obra gruesa" src="e92df1d5bbfa03294ba415884a118c45.jpg"/><span class="featured-property-badge" data-i18n-en="For rent" data-i18n-es="Arriendo">Arriendo</span></div><div class="featured-property-body"><div class="featured-property-kind" data-i18n-en="Retail space · Vitacura" data-i18n-es="Local comercial · Vitacura">Local comercial · Vitacura</div><h3 data-i18n-en="217 m² Retail Space for Rent – Shell Condition, Vitacura" data-i18n-es="Arriendo local comercial Vitacura 217m2 Obra gruesa">Arriendo local comercial Vitacura 217m2 Obra gruesa</h3><p class="featured-property-location" data-i18n-en="Between Paul Claudel and Navidad streets · Parque Bicentenario · Vitacura" data-i18n-es="Entre calles Paul Claudel y Navidad · Parque Bicentenario · Vitacura">Entre calles Paul Claudel y Navidad · Parque Bicentenario · Vitacura</p><div class="featured-property-meta"><span>217.54 m²</span></div><strong class="featured-property-price">UF 194,15</strong><a class="featured-property-link" data-i18n-en="View property" data-i18n-es="Ver propiedad" href="propiedades.html?prop=KP487371">Ver propiedad</a></div></article><article class="featured-property-card"><div class="featured-property-photo"><img alt="Departamento Arriendo 2D/2B Santiago Metro Santa Ana" src="a225e482975719c89eb45dc831a7c119.jpg"/><span class="featured-property-badge" data-i18n-en="For rent" data-i18n-es="Arriendo">Arriendo</span></div><div class="featured-property-body"><div class="featured-property-kind" data-i18n-en="Apartment · Santiago" data-i18n-es="Departamento · Santiago">Departamento · Santiago</div><h3 data-i18n-en="2BR/2BA Apartment for Rent – Santiago, Santa Ana Metro" data-i18n-es="Departamento Arriendo 2D/2B Santiago Metro Santa Ana">Departamento Arriendo 2D/2B Santiago Metro Santa Ana</h3><p class="featured-property-location" data-i18n-en="Santo Domingo at Manuel Rodríguez · Barrio Brasil · Santiago" data-i18n-es="Santo Domingo con Manuel Rodríguez · Barrio Brasil · Santiago">Santo Domingo con Manuel Rodríguez · Barrio Brasil · Santiago</p><div class="featured-property-meta"><span>65.00 m²</span></div><strong class="featured-property-price">CLP 640.000</strong><a class="featured-property-link" data-i18n-en="View property" data-i18n-es="Ver propiedad" href="propiedades.html?prop=KP482764">Ver propiedad</a></div></article></div></section>
 <section class="guide"><div class="container guide-inner"><div class="reveal"><div class="eyebrow" data-i18n-en="Free resource" data-i18n-es="Recurso gratuito">Recurso gratuito</div><h2 data-i18n-en="The 5 most common regulatory mistakes when renting a warehouse in Santiago." data-i18n-es="Los 5 errores normativos más comunes al arrendar una bodega en Santiago.">Los 5 errores normativos más comunes al arrendar una bodega en Santiago.</h2><p data-i18n-en="Download our practical guide to understand the main risks before committing your company to a property." data-i18n-es="Descarga nuestra guía práctica para entender los principales riesgos antes de comprometer a tu empresa con una propiedad.">Descarga nuestra guía práctica para entender los principales riesgos antes de comprometer a tu empresa con una propiedad.</p></div><div class="guide-card reveal"><h3 data-i18n-en="JADA guide to renting warehouses" data-i18n-es="Guía JADA para arrendar bodegas">Guía JADA para arrendar bodegas</h3><p data-i18n-en="5 regulatory risks worth checking before signing." data-i18n-es="5 riesgos normativos que conviene revisar antes de firmar.">5 riesgos normativos que conviene revisar antes de firmar.</p><a class="btn" data-i18n-en="Download guide →" data-i18n-es="Descargar guía →" href="./Guia_JADA_Antes_de_Arrendar_una_Bodega_en_Santiago.pdf" rel="noopener noreferrer" style="display:flex;background:var(--navy);color:#fff" target="_blank">Descargar guía →</a></div></div></section>
 <section class="section home-team" id="equipo">
 <div class="container">
